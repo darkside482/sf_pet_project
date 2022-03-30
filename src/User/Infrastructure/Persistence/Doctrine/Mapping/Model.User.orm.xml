@@ -1,0 +1,7 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping">
+	<entity name="App\User\Domain\Model\User" table="users" repository-class="App\User\Infrastructure\Repository\UserRepository">
+		<id name="id" column="id" type="ulid"/>
+		<embedded name="email" class="App\User\Domain\ValueObject\Email" use-column-prefix="false"/>
+		<embedded name="password" class="App\User\Domain\ValueObject\Password" use-column-prefix="false"/>
+	</entity>
+</doctrine-mapping>

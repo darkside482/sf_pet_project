@@ -1,0 +1,11 @@
+post_controllers:
+    resource: ../src/User/Infrastructure/Http/Controller
+    type: annotation
+
+note_controllers:
+    resource: ../src/Note/Infrastructure/Http/Controller
+    type: annotation
+
+kernel:
+    resource: ../src/Kernel.php
+    type: annotation
